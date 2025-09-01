@@ -1,4 +1,4 @@
-# KVM Dev Environment & Libvirt Domain Listing
+# KVM Dev Environment
 
 Setup a Docker based development environment for GATech - CS 6210 - Project 1: KVM.  
 
