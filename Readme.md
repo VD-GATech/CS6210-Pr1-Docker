@@ -1,0 +1,23 @@
+# KVM Dev Environment & Libvirt Domain Listing
+
+Setup a Docker based development environment for GATech - CS 6210 - Project 1: KVM.
+
+### Prerequisites
+
+- [Docker Desktop](https://www.docker.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)  
+
+- VSCode Extensions: 
+  - [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) / Dev Containers
+  - [C/C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack)
+
+### Setup
+
+1. **Open in VS Code**  
+   Open the folder in VS Code.  
+
+2. **Dev Containers: Open Folder in Container** / **Dev Containers: Reopen in Container**  
+   Press 'F1' or 'Ctrl+Shift+P'.
+
+3. **Wait 5-10 minutes (Depend on machine)**  
+   If complete successfully, terminal will print out list of 8 new vms . Or use "virt-manager" to check it.

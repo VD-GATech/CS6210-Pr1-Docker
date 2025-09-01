@@ -1,0 +1,27 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "KVM Dev",
+	"remoteUser": "root",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
+	"runArgs": [
+		"--privileged"
+		,"--cap-add=ALL"
+	],
+	//"overrideCommand": false,
+	
+	"onCreateCommand": "chmod +x ./.devcontainer/onCreate.sh && ./.devcontainer/onCreate.sh",
+	"postStartCommand": "chmod +x ./.devcontainer/postStart.sh && ./.devcontainer/postStart.sh",
+
+	// Install extension for container
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools-extension-pack"
+			]
+		}
+	}
+}
