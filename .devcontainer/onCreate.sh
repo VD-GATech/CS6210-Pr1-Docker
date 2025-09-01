@@ -17,13 +17,9 @@ ssh-keygen -t rsa -q -f "$HOME/.ssh/id_rsa" -N ""
 apt-get install -y uvtool
 uvt-simplestreams-libvirt sync release=bionic arch=amd64
 
-# install 1st vm
-uvt-kvm create aos_vm1 release=bionic --memory=512 --no-start
-uvt-kvm wait aos_vm1
-
-# Clone as many as you want
-for i in {2..8}; do
-	virt-clone --original aos_vm1 --name aos_vm$i --auto-clone
+# Let it do in background maybe better than cloning.
+for i in {1..8}; do
+	uvt-kvm create aos_vm$i release=bionic --memory=512 --no-start
 done
 
 pkill libvirtd
