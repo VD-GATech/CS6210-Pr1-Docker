@@ -14,16 +14,15 @@ Setup a Docker based development environment for GATech - CS 6210 - Project 1: K
 
 ### Setup
 
-1. **Open in VS Code**  
-   Open the folder in VS Code.  
+1. **Open folder in VS Code**  
 
 2. **Dev Containers: Open Folder in Container** / **Dev Containers: Reopen in Container**  
    Press 'F1' or 'Ctrl+Shift+P'.
 
 3. **Wait 5-10 minutes (Depend on machine)**  
    If complete successfully, terminal will print out list of 8 new vms . Or use "virt-manager" to check it.
-
-4. **Edit %UserProfile%\.wslconfig**
+   
+4. **Edit %UserProfile%\.wslconfig** + **Reset**  
 ```
 [wsl2]
 # Enable nested virtualization
@@ -36,6 +35,5 @@ processors=4
 memory=16GB
 ```
 
-5. **Extract Project 1 Starter Source**  
-   Goodluck!  
-   VD
+Goodluck!  
+VD
