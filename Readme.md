@@ -3,8 +3,7 @@
 Setup a Docker based development environment for GATech - CS 6210 - Project 1: KVM.  
 
 ### Prerequisites
-
-- [Docker Desktop](https://www.docker.com/)
+- [Docker Desktop - WSL2](https://www.docker.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)  
 
 - VSCode Extensions: 
@@ -24,6 +23,19 @@ Setup a Docker based development environment for GATech - CS 6210 - Project 1: K
 3. **Wait 5-10 minutes (Depend on machine)**  
    If complete successfully, terminal will print out list of 8 new vms . Or use "virt-manager" to check it.
 
-4. **Extract Project 1 Starter Source**  
+4. **Edit %UserProfile%\.wslconfig**
+```
+[wsl2]
+# Enable nested virtualization
+nestedVirtualization=true
+
+# Sets the VM to use 4 processors
+processors=4
+
+# Limits VM memory to use no more than 16 GB
+memory=16GB
+```
+   
+6. **Extract Project 1 Starter Source**  
    Goodluck!  
    VD
