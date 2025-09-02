@@ -35,7 +35,7 @@ processors=4
 # Limits VM memory to use no more than 16 GB
 memory=16GB
 ```
-   
-6. **Extract Project 1 Starter Source**  
+
+5. **Extract Project 1 Starter Source**  
    Goodluck!  
    VD
